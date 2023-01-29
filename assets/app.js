@@ -6,7 +6,7 @@ document.getElementById("main").style.boxShadow = "0px 0px 70px"+Kebab.TemplateC
 
 
 $(".background").css('background',Kebab.TemplateColorHex);
-$("img").attr("src","asseets/img/"+Kebab.pfp);
+$("img").attr("src","assets/img/"+Kebab.pfp);
 // $("sum_light_jazz").attr("src","asseets/img/"+Kebab.Music);
 // UM-Lang Settings //
 

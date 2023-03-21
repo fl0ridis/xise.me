@@ -6,7 +6,7 @@ Kebab = []; //
 
 // General Settings(name, PFP, background) //
 Kebab.name = "George Floridis";
-Kebab.phrase = "Stay Up";
+Kebab.phrase = "7teen";
 
 Kebab.pfp = "pfp1.jpg";  //  ui/assets/img
 Kebab.Background = "123.gif";  // ui/assets/img/bg

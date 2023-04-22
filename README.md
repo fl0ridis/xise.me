@@ -4,8 +4,37 @@ This is my website, i made it back in 2020 when i was a beginner at Developing, 
 
 
 <h1 align="center"></a></h1><!-- 👋 -->
+<div>
+<h2 align="center">Features</a></h2>
+<div align="center">
 
-**Setup Guide**
+**Last.FM Integration**
+
+
+<img align="center" width=600px src = "https://cdn.discordapp.com/attachments/939676191500140644/1099445966102335621/carbon_4.png"> </img>
+</div>
+<div align="center">
+
+<br>
+
+**Easy to Use Config**
+
+
+<img align="center" width=600px src = "https://cdn.discordapp.com/attachments/939676191500140644/1099447313899982848/carbon_6.png"> </img>
+</div>
+<div align="center">
+
+<br>
+
+**WakaTime Integration**
+
+
+<img align="center" width=600px src = "https://cdn.discordapp.com/attachments/939676191500140644/1099446595000471602/carbon_5.png"> </img>
+</div>
+
+</div>
+<h2 align="center">Setup Guide</a></h2>
+
 
 **1. Fork the Repository to your github account.**
 

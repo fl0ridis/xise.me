@@ -783,3 +783,13 @@ left: -5px ;
     background: #e22b2b;
 
 }
+#socials-container .n06 svg {
+    fill: #FFFFFF;
+    position: relative;
+top: -2px ;
+left: -5px;
+
+}
+#socials-container .n06:hover svg {
+    fill: #5539cc  !important;
+}

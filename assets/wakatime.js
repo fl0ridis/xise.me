@@ -38,7 +38,7 @@ $(document).ready(function() {
 
                 // Inject into Dashboard HTML
                 
-                wakaTime.html(response.data.grand_total.human_readable_total)
+                wakaTime.html("i've spent " + response.data.grand_total.human_readable_total + " developing")
             }
         }); // end Coding Activity
  

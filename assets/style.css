@@ -226,12 +226,11 @@ p{
 
 .player-cover {
     width: 80px;
-    border: 2px solid #fff;
+    border-radius: 5%;
 }
 
 #cover {
     width: 100px;
-    border: 2px solid #fff;
     display: inline-block;
 }
   
@@ -541,4 +540,28 @@ left: -5px ;
 
 #socials-container .n05:hover svg {
     fill: #8341d8 !important;
+}
+#socials-container .n06 svg {
+    fill: #FFFFFF;
+    position: relative;
+top: -2px ;
+left: -5px;
+
+
+}
+#socials-container .n06:hover svg {
+    fill: #5539cc  !important;
+}
+
+.pfp{
+
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-top: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 2px solid ;
+    border-color: transparent;
 }

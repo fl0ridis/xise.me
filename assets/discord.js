@@ -41,23 +41,47 @@
              document.getElementById('cover').style.display = "block";
 
           }else {
-            // If user is not listening to Spotify, Then show Game Activity
-                  document.getElementById('musicPlayer-Container').style.display = "block";
+     document.getElementById('musicPlayer-Container').style.display = "block";
 
             document.getElementById("header-label").innerHTML = "Now Playing";
             console.log(data["activities"][0]);
-            if(data["activities"][0] == undefined) {
-            document.getElementById('musicPlayer-Container').style.display = "none";
+            // if(data["activities"][0] == undefined) {
+            // document.getElementById('musicPlayer-Container').style.display = "none";
 
-            }
-             document.getElementById("title").innerHTML = data["activities"][1]["name"];
+            // }
+            console.log(data["activities"][0]["type"])
+            if(data["activities"][0]["type"]=="4"){
+              document.getElementById("title").innerHTML = data["activities"][1]["name"];
              document.getElementById("artist").innerHTML = data["activities"][1]["details"];
             document.getElementById("album").innerHTML = data["activities"][1]["state"];
-
+            
              const largeIMG = data["activities"][1]["assets"]["large_image"];
              const appID = data["activities"][1]["application_id"];
+             if (largeIMG == undefined){
+             document.getElementById('cover').style.display = "none";
+             }else{
              document.getElementById('cover').style.display = "block";
              document.getElementById("cover").src = "https://cdn.discordapp.com/app-assets/"+ appID +"/"+ largeIMG;
+             }
+            
+            }else{
+               document.getElementById("title").innerHTML = data["activities"][0]["name"];
+             document.getElementById("artist").innerHTML = data["activities"][0]["details"];
+            document.getElementById("album").innerHTML = data["activities"][0]["state"];
+            
+             const largeIMG = data["activities"][0]["assets"]["large_image"];
+             const appID = data["activities"][0]["application_id"];
+             if (largeIMG == undefined){
+             document.getElementById('cover').style.display = "none";
+             }else{
+             document.getElementById('cover').style.display = "block";
+             document.getElementById("cover").src = "https://cdn.discordapp.com/app-assets/"+ appID +"/"+ largeIMG;
+             }
+            }
+           
+            // If user is not listening to Spotify, Then show Game Activity
+             
+             
 
           }
     }

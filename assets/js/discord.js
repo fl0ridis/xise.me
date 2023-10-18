@@ -15,6 +15,7 @@
 
       }else if (status == "dnd"){
         document.getElementById('pfp').style.borderColor = "RED";
+        console.log(data["activities"].length)
 
       }else if (status == "idle"){
         document.getElementById('pfp').style.borderColor = "ORANGE";
@@ -41,12 +42,14 @@
              document.getElementById('cover').style.display = "block";
 
           }else {
+            if (data["activities"].length == 0){
+              document.getElementById('musicPlayer-Container').style.display = "none";
+            }else{
             // If user is not listening to Spotify, Then show Game Activity
 
             document.getElementById('musicPlayer-Container').style.display = "block";
 
             document.getElementById("header-label").innerHTML = "Now Playing";
-            console.log(data["activities"][0]);
             //checks if the activity is a Custom Status, If so then is doesnt show the activity
             if(data["activities"][0]["type"] == "4") {
             document.getElementById('musicPlayer-Container').style.display = "none";
@@ -100,12 +103,14 @@
              document.getElementById("cover").src = "https://cdn.discordapp.com/app-assets/"+ appID +"/"+ largeIMG;
              }
               }
-
+            
             }
-           
+            if (data["activities"]/length== 0){
+              document.getElementById('musicPlayer-Container').style.display = "none";
+            }
              
              
 
-          }
+          }}
     }
     getData();
